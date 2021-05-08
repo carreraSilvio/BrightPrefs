@@ -1,7 +1,7 @@
 ﻿namespace BrightPrefs.Runtime
 {
     /// <summary>
-    /// Class that's maintains access to key and value of a PlayerPref
+    /// Maintains key and value of a PlayerPref
     /// </summary>
     public sealed class PlayerPrefEntry<T> : BrightPlayerPrefs
     {

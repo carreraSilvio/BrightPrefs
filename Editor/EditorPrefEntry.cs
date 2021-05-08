@@ -1,7 +1,7 @@
 ﻿namespace BrightPrefs.Editortime
 {
     /// <summary>
-    /// Maintains key and value of a EditorPref
+    /// Maintains key and value of an EditorPref
     /// </summary>
     public sealed class EditorPrefEntry<T> : BrightEditorPrefs
     {
