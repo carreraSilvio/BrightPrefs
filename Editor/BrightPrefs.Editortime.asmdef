@@ -1,0 +1,17 @@
+{
+    "name": "BrightPrefs.Editortime",
+    "references": [
+        "GUID:e2fedf37551c4a34cba3a41aa0f44c18"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
