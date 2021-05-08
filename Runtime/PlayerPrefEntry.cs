@@ -1,8 +1,9 @@
-﻿using UnityEngine;
-
-namespace BrightPrefs.Runtime
+﻿namespace BrightPrefs.Runtime
 {
-    public class PlayerPrefEntry<T> 
+    /// <summary>
+    /// Class that's maintains access to key and value of a PlayerPref
+    /// </summary>
+    public sealed class PlayerPrefEntry<T> : BrightPlayerPrefs
     {
         public T Value 
         {
@@ -13,8 +14,7 @@ namespace BrightPrefs.Runtime
             set
             {
                 _value = value;
-                var valueJson = JsonUtility.ToJson(value);
-                PlayerPrefs.SetString(_key, valueJson);
+                SetObject(_key, value);
             }
         }
 
@@ -24,11 +24,6 @@ namespace BrightPrefs.Runtime
         public PlayerPrefEntry(string key)
         {
             _key = key;
-        }
-
-        public void Save()
-        {
-            PlayerPrefs.Save();
         }
     }
 }
