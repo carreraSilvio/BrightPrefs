@@ -24,6 +24,7 @@
         public PlayerPrefEntry(string key)
         {
             _key = key;
+            _value = (T)GetObject<T>(key);
         }
     }
 }
