@@ -3,7 +3,7 @@
     /// <summary>
     /// Maintains key and value of a PlayerPref
     /// </summary>
-    public sealed class PlayerPrefEntry<T> : BrightPlayerPrefs
+    public sealed class PlayerPrefEntry<T> : BrightPlayerPrefs where T : new()
     {
         public T Value 
         {
