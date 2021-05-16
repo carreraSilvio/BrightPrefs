@@ -22,30 +22,12 @@ namespace BrightPrefs.Runtime
 
         public static void SetObject(string key, object value)
         {
-            switch (value)
-            {
-                case int intValue:
-                    SetInt(key, intValue);
-                    break;
-                case float floatValue:
-                    SetFloat(key, floatValue);
-                    break;
-                case string stringValue:
-                    SetString(key, stringValue);
-                    break;
-                case bool boolValue:
-                    SetBool(key, boolValue);
-                    break;
-                default:
-                    string jsonValue = JsonUtility.ToJson(value);
-                    SetString(key, jsonValue);
-                    break;
-            }
+            string jsonValue = JsonUtility.ToJson(value);
+            SetString(key, jsonValue);
         }
 
         public static T GetObject<T>(string key) where T : new()
         {
-
             var stringValue = GetString(key, string.Empty);
             return string.IsNullOrEmpty(stringValue) ?
                 new T() :
