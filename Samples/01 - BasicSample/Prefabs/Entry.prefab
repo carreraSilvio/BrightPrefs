@@ -297,6 +297,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Label: {fileID: 2746022335075705140}
   Value: {fileID: 7487237642429958348}
+  SaveBtn: {fileID: 8739661974348337914}
+  LoadBtn: {fileID: 2694555390982736823}
 --- !u!1 &3179759478630541312
 GameObject:
   m_ObjectHideFlags: 0
@@ -389,7 +391,7 @@ GameObject:
   - component: {fileID: 406520362422192435}
   - component: {fileID: 2694555390982736823}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: LoadBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -712,7 +714,7 @@ GameObject:
   - component: {fileID: 7143051122909036889}
   - component: {fileID: 8739661974348337914}
   m_Layer: 5
-  m_Name: Button
+  m_Name: SaveBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

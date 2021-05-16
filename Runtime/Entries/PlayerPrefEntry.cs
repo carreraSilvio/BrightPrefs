@@ -14,14 +14,24 @@
             set
             {
                 _value = value;
-                SetObject(_key, value);
             }
         }
         protected T _value;
 
         public PlayerPrefEntry(string key) : base(key)
         {
+            Load();
+        }
+
+        public override void Load()
+        {
             _value = GetObject<T>(_key);
+        }
+
+        public override void Save()
+        {
+            SetObject(_key, _value);
+            base.Save();
         }
     }
 }

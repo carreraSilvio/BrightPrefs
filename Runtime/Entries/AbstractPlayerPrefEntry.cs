@@ -1,4 +1,6 @@
-﻿namespace BrightPrefs.Runtime
+﻿using UnityEngine;
+
+namespace BrightPrefs.Runtime
 {
     /// <summary>
     /// Maintains key and value of a PlayerPref
@@ -10,6 +12,12 @@
         public AbstractPlayerPrefEntry(string key)
         {
             _key = key;
+        }
+
+        public abstract void Load();
+        public new virtual void Save()
+        {
+            PlayerPrefs.Save();
         }
     }
 }

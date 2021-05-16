@@ -11,14 +11,24 @@
             set
             {
                 _value = value;
-                SetInt(_key, value);
             }
         }
         private int _value;
 
         public IntPlayerPrefEntry(string key):base(key)
         {
+            Load();
+        }
+
+        public override void Load()
+        {
             _value = GetInt(_key);
+        }
+
+        public override void Save()
+        {
+            SetInt(_key, _value);
+            base.Save();
         }
     }
 }

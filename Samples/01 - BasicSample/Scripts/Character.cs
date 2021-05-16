@@ -3,7 +3,7 @@
     [System.Serializable]
     public class Character
     {
-        public string name = "Sample";
+        public string name = "Character";
         public int strength = 10;
         public float damage = 30f;
         public bool magicUser = true;

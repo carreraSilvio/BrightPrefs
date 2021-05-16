@@ -8,6 +8,8 @@ namespace BrightPrefs.Samples
     {
         public Text Label;
         public InputField Value;
+        public Button SaveBtn;
+        public Button LoadBtn;
 
         public void Set(string label, object value, Action<string> onEndEditCallback)
         {

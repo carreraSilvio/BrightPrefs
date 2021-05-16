@@ -11,14 +11,24 @@
             set
             {
                 _value = value;
-                SetString(_key, value);
             }
         }
         private string _value;
 
         public StringPlayerPrefEntry(string key) : base(key)
         {
+            Load();
+        }
+
+        public override void Load()
+        {
             _value = GetString(_key);
+        }
+
+        public override void Save()
+        {
+            SetString(_key, _value);
+            base.Save();
         }
     }
 }
