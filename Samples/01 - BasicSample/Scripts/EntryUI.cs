@@ -2,7 +2,7 @@
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-namespace BrightPrefs.Samples
+namespace BrightPrefs.BasicSample
 {
     public class EntryUI : UIBehaviour
     {

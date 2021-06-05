@@ -1,10 +1,8 @@
 ﻿using BrightPrefs.Runtime;
-using System;
 using System.Globalization;
 using UnityEngine;
-using UnityEngine.UI;
 
-namespace BrightPrefs.Samples
+namespace BrightPrefs.BasicSample
 {
     public class BasicSampleMain : MonoBehaviour
     {
@@ -69,6 +67,11 @@ namespace BrightPrefs.Samples
 
         private void HandleIntEntryChange(string value)
         {
+            if(string.IsNullOrEmpty(value))
+            {
+                return;
+            }
+
             if(int.TryParse(value, out int result))
             {
                 _intPlayerPrefEntry.Value = result;
@@ -78,6 +81,11 @@ namespace BrightPrefs.Samples
 
         private void HandleFloatEntryChange(string value)
         {
+            if (string.IsNullOrEmpty(value))
+            {
+                return;
+            }
+
             var result = float.Parse(value, CultureInfo.InvariantCulture);
             _floatPlayerPrefEntry.Value = result;
             Debug.Log($"Result is {_floatPlayerPrefEntry.Value }");
@@ -85,6 +93,11 @@ namespace BrightPrefs.Samples
 
         private void HandleBoolEntryChange(string value)
         {
+            if (string.IsNullOrEmpty(value))
+            {
+                return;
+            }
+
             if (bool.TryParse(value, out bool result))
             {
                 _boolPlayerPrefEntry.Value = result;
