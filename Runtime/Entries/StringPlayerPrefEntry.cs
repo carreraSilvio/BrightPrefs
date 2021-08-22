@@ -1,4 +1,6 @@
-﻿namespace BrightPrefs.Runtime
+﻿using UnityEngine;
+
+namespace BrightPrefs.Runtime
 {
     public sealed class StringPlayerPrefEntry : AbstractPlayerPrefEntry
     {
@@ -22,12 +24,12 @@
 
         public override void Load()
         {
-            _value = GetString(_key);
+            _value = PlayerPrefs.GetString(_key);
         }
 
         public override void Save()
         {
-            SetString(_key, _value);
+            PlayerPrefs.SetString(_key, _value);
             base.Save();
         }
     }

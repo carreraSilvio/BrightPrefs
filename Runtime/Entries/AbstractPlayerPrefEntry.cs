@@ -5,7 +5,7 @@ namespace BrightPrefs.Runtime
     /// <summary>
     /// Maintains key and value of a PlayerPref
     /// </summary>
-    public abstract class AbstractPlayerPrefEntry : BrightPlayerPrefs 
+    public abstract class AbstractPlayerPrefEntry
     {
         protected readonly string _key;
 
@@ -15,7 +15,7 @@ namespace BrightPrefs.Runtime
         }
 
         public abstract void Load();
-        public new virtual void Save()
+        public virtual void Save()
         {
             PlayerPrefs.Save();
         }

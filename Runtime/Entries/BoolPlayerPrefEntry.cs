@@ -22,12 +22,12 @@
 
         public override void Load()
         {
-            _value = GetBool(_key);
+            _value = BrightPlayerPrefs.GetBool(_key);
         }
 
         public override void Save()
         {
-            SetBool(_key, _value);
+            BrightPlayerPrefs.SetBool(_key, _value);
             base.Save();
         }
     }

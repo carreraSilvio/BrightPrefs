@@ -1,7 +1,7 @@
 ﻿namespace BrightPrefs.Runtime
 {
     /// <summary>
-    /// Maintains key and value of a PlayerPref
+    /// Generic version o PlayerPrefEntry
     /// </summary>
     public class PlayerPrefEntry<T> : AbstractPlayerPrefEntry where T : new()
     {
@@ -25,12 +25,12 @@
 
         public override void Load()
         {
-            _value = GetObject<T>(_key);
+            _value = BrightPlayerPrefs.GetObject<T>(_key);
         }
 
         public override void Save()
         {
-            SetObject(_key, _value);
+            BrightPlayerPrefs.SetObject(_key, _value);
             base.Save();
         }
     }

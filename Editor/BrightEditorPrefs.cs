@@ -6,7 +6,7 @@ namespace BrightPrefs.Editortime
     /// <summary>
     /// Wrapper for UnityEditor.EditorPrefs with object support.
     /// </summary>
-    public class BrightEditorPrefs
+    public static class BrightEditorPrefs
     {
         public static void SetObject(string key, object value)
         {

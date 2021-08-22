@@ -3,7 +3,7 @@
     /// <summary>
     /// Maintains key and value of an EditorPref
     /// </summary>
-    public sealed class EditorPrefEntry<T> : BrightEditorPrefs
+    public sealed class EditorPrefEntry<T>
     {
         public T Value
         {
@@ -14,7 +14,7 @@
             set
             {
                 _value = value;
-                SetObject(_key, value);
+                BrightEditorPrefs.SetObject(_key, value);
             }
         }
 

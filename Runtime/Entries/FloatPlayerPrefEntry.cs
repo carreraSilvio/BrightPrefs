@@ -1,4 +1,6 @@
-﻿namespace BrightPrefs.Runtime
+﻿using UnityEngine;
+
+namespace BrightPrefs.Runtime
 {
     public sealed class FloatPlayerPrefEntry : AbstractPlayerPrefEntry
     {
@@ -22,12 +24,12 @@
 
         public override void Load()
         {
-            _value = GetFloat(_key);
+            _value = PlayerPrefs.GetFloat(_key);
         }
 
         public override void Save()
         {
-            SetFloat(_key, _value);
+            PlayerPrefs.SetFloat(_key, _value);
             base.Save();
         }
     }

@@ -2,13 +2,13 @@
   "name": "com.brightprefs",
   "version": "1.0.0",
   "displayName": "Bright Prefs",
-  "description": "Node-base narrative editor",
+  "description": "Wrapper for Prefs with quality of life improvements",
   "unity": "2018.2",
   "unityRelease": "15f1",
   "author": 
   {
     "name": "Silvio Carréra",
-    "url": "https://github.com/carreraSilvio/hanashi"
+    "url": "https://github.com/carreraSilvio/BrightPrefs"
   },
   "samples": 
   [
