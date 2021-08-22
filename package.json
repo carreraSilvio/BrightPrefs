@@ -1,0 +1,26 @@
+{
+  "name": "com.brightprefs",
+  "version": "1.0.0",
+  "displayName": "Bright Prefs",
+  "description": "Node-base narrative editor",
+  "unity": "2018.2",
+  "unityRelease": "15f1",
+  "author": 
+  {
+    "name": "Silvio Carréra",
+    "url": "https://github.com/carreraSilvio/hanashi"
+  },
+  "samples": 
+  [
+    {
+        "displayName": "Basic Example",
+        "description": "Save and load data like Int, Float, Strig and Bool",
+        "path": "Samples~/01 - BasicSample"
+    },
+    {
+        "displayName": "Complex Example",
+        "description": "Save and load data like enum and classes",
+        "path": "Samples~/02 - ComplexSample"
+    }
+  ]
+}
